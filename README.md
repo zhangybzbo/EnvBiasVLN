@@ -21,6 +21,12 @@ Put `modify.py` into your VLN codebase and run
 ```
 python modify.py --CODE_ROOT $CODE_SRC --REPLACE_FEAT $SEMANTIC_FEAT
 ```
-where `$CODE_SRC` is the path of your code source, `$SEMANTIC_FEAT` is the type of semantic feature you would like to use.
+where `$CODE_SRC` is the path of your code source, `$SEMANTIC_FEAT` is the type of semantic feature you would like to use (same notations as in our paper).
 
 This process should make a copy of your original code and create a new version with the modifications for semantic features.
+
+E.g., if you want to run the offical CVDN baseline using semantic features, after installing their repo from [**https://github.com/mmurray/cvdn**](https://github.com/mmurray/cvdn), copy the downloaded semantic features into their `img_features` folder. Put `modify.py` into the repo, and run:
+```
+python modify.py --CODE_ROOT tasks/NDH --REPLACE_FEAT GT-Seg
+```
+After that, when you follow their instructions for training, the model will be trained with our ground-truth semantic segmentation features.
