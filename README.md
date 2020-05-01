@@ -11,7 +11,7 @@ Several kinds of semantic features will be downloaded:
 1. `ImageNet.tsv` ImageNet-1000 features
 2. `Detection.tsv` detected object features
 3. `GT-Seg.tsv` ground-truth semantic segmentation features
-4. `Learned-Seg` predicted semantic features
+4. `Learned-Seg.tsv` predicted semantic features
 
 
 ## To use the semantic features for your own VLN model
