@@ -29,7 +29,7 @@ for fname in os.listdir(args.CODE_ROOT):
             print('Ignore %s' % full_path)
             orig_py_files.append(full_path)
         else:
-            new_full_path = os.path.join(ROOT, stem + "_ORIG" + ".py")
+            new_full_path = os.path.join(args.CODE_ROOT, stem + "_ORIG" + ".py")
             if os.path.exists(new_full_path):
                 pass
             else:
