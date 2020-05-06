@@ -32,7 +32,7 @@ python modify.py --CODE_ROOT r2r_src --REPLACE_FEAT GT-Seg
 After that, when you follow their instructions for training, the model will be trained with our ground-truth semantic segmentation features.
 
 ### Result samples
-When running the "EnvDrop(https://github.com/airsplay/R2R-EnvDrop)" agent (without back translation) using semantic features, we can get the following results:
+When running the "[EnvDrop](https://github.com/airsplay/R2R-EnvDrop)" agent (without back translation) using semantic features, we can get the following results:
 
 | Feature type | Val seen (%) | Val unseen (%) | \|gap\| |
 | ---- | :---: | :---: | :---:|
